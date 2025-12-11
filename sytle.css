@@ -1,55 +1,40 @@
-/* -------------------------------------------------- */
-/* REGLA 1: Utilizar el selector universal * para cambiar el tipo de fuente */
-/* -------------------------------------------------- */
+/* Regla 1: Uso de selector universal */
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 2: body → margin: 0; padding derecha e izquierda: 20% */
-/* -------------------------------------------------- */
+/* Regla 2: body → margin: 0; padding derecha e izquierda: 20% */
 body {
     margin: 0;
     padding: 0 20%;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 3: h1 subrayado, color darkcyan, alineado al centro */
-/* -------------------------------------------------- */
+
+/* Regla 3: h1 subrayado, color darkcyan, alineado al centro */
 h1 {
     text-decoration: underline;
     color: darkcyan;
     text-align: center;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 4: elementos con clase .selector → color lightcyan */
-/* -------------------------------------------------- */
+/* Regla 4: elementos con clase .selector -> color lightcyan */
 .selector {
     color: lightcyan;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 5: elementos con clase .selectors */
-/* padding: 5%; border: solid darkcyan 1px; border-radius: 5px */
-/* -------------------------------------------------- */
+/* Regla 5: elementos con clase .selectors */
 .selectors {
     padding: 5%;
     border: solid darkcyan 1px;
     border-radius: 5px;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 6: elementos con id="universal" → color lightgoldenrodyellow */
-/* -------------------------------------------------- */
+/* Regla 6: elementos con id="universal" -> color lightgoldenrodyellow */
 #universal {
     color: lightgoldenrodyellow;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 7: h2.selector y h2#universal */
-/* fondo darkcyan, padding 1%, borde redondeado 5px */
-/* -------------------------------------------------- */
+/* Regla 7: h2.selector y h2#universal */
 h2.selector,
 h2#universal {
     background-color: darkcyan;
@@ -57,43 +42,56 @@ h2#universal {
     border-radius: 5px;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 8: span → font-weight 900, fondo negro, texto blanco */
-/* -------------------------------------------------- */
+/* Regla 8: span -> font-weight 900, fondo negro, texto blanco */
 span {
     font-weight: 900;
     background-color: black;
     color: white;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 9: a hijos directos de li → text-decoration: none */
-/* -------------------------------------------------- */
+/* Regla 9: a hijos directos de li -> text-decoration: none */
 li > a {
     text-decoration: none;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 10: h3 → fondo rgba, padding 0.5px, border-radius 5px */
-/* -------------------------------------------------- */
+/* Regla 10: h3 → fondo rgba, padding 0.5px, border-radius 5px */
 h3 {
     background-color: rgba(0, 139, 139, 0.529);
     padding: 0.5px;
     border-radius: 5px;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 11: div descendientes de #gallery → width 100% */
-/* -------------------------------------------------- */
+/* Regla 11: div descendientes de #gallery -> width 100% */
 #gallery div {
     width: 100%;
 }
 
-/* -------------------------------------------------- */
-/* REGLA 12: img → width 100%, border 1px solid darkcyan, border-radius 5px */
-/* -------------------------------------------------- */
+/* Relga 12: img -> width 100%, border 1px solid darkcyan, border-radius 5px */
 img {
     width: 100%;
     border: solid darkcyan 1px;
     border-radius: 5px;
+}
+
+/* Bonus */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th {
+    background-color: #e5e7eb; 
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
 }
